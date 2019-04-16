@@ -1,0 +1,30 @@
+  508  touch Testfile
+  509  mv Testfile Testfile2
+  510  rm Testfile2 
+  511  mkdir TestDirectory
+  512  touch TestDirectory/Test.txt
+  513  $ rmdir TestDirectory
+  514  $ rm TestDirectory/Test.txt
+  515  rmdir TestDirectory
+  516  ls
+  517  $ rm TestDirectory/Test.txt
+  518  rm TestDirectory/Test.txt
+  519  rm TestDirectory/
+  520  rmdir TestDirectory/
+  521  echo "My first line." > test.txt
+  522  ls
+  523  cat test.txt
+  524  echo "My second line" >> test.txt
+  525  ls / >> ListRootDir.txt
+  526  cat ListRootDir.txt
+  527  mkdir TestWild
+  528  cd TestWild/
+  529  touch File1txt
+  530  touch File2.txt
+  531  touch File3.txt
+  532  touch File4.txt | touch File1.csv | touch File2.csv
+  533  touch File3.csv | touch File4.csv | touch Anotherfile.csv
+  534  touch Anotherfile.txt
+  535  ls
+  536  ls | wc -l
+  537  history | tail -n 30 > For_Daniel_Wildcard.txt

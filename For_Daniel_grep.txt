@@ -1,0 +1,30 @@
+  531  touch File3.txt
+  532  touch File4.txt | touch File1.csv | touch File2.csv
+  533  touch File3.csv | touch File4.csv | touch Anotherfile.csv
+  534  touch Anotherfile.txt
+  535  ls
+  536  ls | wc -l
+  537* history | tail -n 40 > For_Daniel_Wildcard.txt
+  538  ls
+  539  cd For_Daniel_Wildcard.txt 
+  540  nano For_Daniel_Wildcard.txt 
+  541  ls *
+  542  ls File*
+  543  ls *.txt
+  544  ls File?.txt
+  545  ls File[1-2].txt
+  546  ls File[!3].*
+  547  ls
+  548  wget http://www.cep.unep.org/pubs/legislation/spawannxs.txt
+  549  head -n 50 spawannxs.txt
+  550  $ grep Orchidaceae spawannxs.txt
+  551  grep Orchidaceae spawannxs.txt
+  552  grep -c Orchidaceae spawannxs.txt
+  553  $ grep Falco spawannxs.txt
+  554  grep Falco spawannxs.txt
+  555  grep -i Falco spawannxs.txt
+  556  grep -i ara spawannxs.txt
+  557  grep -i -w -A 1 ara spawannxs.txt
+  558  -n
+  559  grep -i -w -v ara spawannxs.txt
+  560  history | tail -n 30 > For_Daniel_grep.txt

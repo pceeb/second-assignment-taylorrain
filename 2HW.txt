@@ -1,0 +1,88 @@
+Hoffman 2
+
+1. type ssh c177-07@Hoffman2.idre.ucla.edu
+   type your password
+2. the first thing you do is obtain a node using qrsh
+
+Using ls
+
+1. ls -l	use a long listing format to view timestamps
+   ls -l -h 	print sizes in a human readable format
+2. lists contents of directories recursively by time of last change
+
+Shortcuts
+
+1. takes you home
+2. takes you back one directory
+3. $ cd ~ takes her home
+$ cd .			does nothing?
+$ cd /			takes you to back to the directory that contains u/home/
+$ cd /home/amanda	takes you to the specified path
+$ cd ../..		takes you back one directory
+$ cd home		takes you into a directory called home
+$ cd ~/data/..		takes you to the folder labelled data in home
+$ cd			does nothing
+$ cd ..			takes you back two directories
+
+File Systems
+
+1. a
+2. b
+
+Making files and appending stuff
+
+1. it creates a file by the name my_file.txt
+yes
+0 bites
+whenever youre making a text file
+no, you cant use touch to edit just to interact or make a file
+2. > will overwrite a file while >> will just add to what already exists in the file
+3. c
+
+Copying, Moving, and deleting files
+
+1. mv sucrose.dat /raw/ | mv maltose.dat /raw/
+2. b
+3. b ????????????????????????
+4. it would ask you if you wanted to remove thesis_backup/quotations.txt
+5. copies both files to the directory backup/
+6. nothing???????????????????
+7. 
+$ cp *calibration* backup/calibration
+$ cp 2015-11-23 send_to_bob/all_november_files/
+$ cp *23* send_to_bob/all_datasets_created_on_a_23rd/
+7. mv fructose.dat sucrose.dat analyzed
+8. done with:  
+$ mkdir 2016-05-20			this would make a directory called 2016-05-20
+$ mkdir 2016-05-20/data			this would make a directory within a directory
+$ mkdir 2016-05-20/data/processed	this would make a directory within a directory within a directory within a directory
+$ mkdir 2016-05-20/data/raw		this would make a directory within a directory within a directory within a directory
+$ mkdir 2016-05-20			this would make a directory called 2016-05-20 
+$ cd 2016-05-20				this would enter directory 2016-05-20
+$ mkdir data				this would make a directory called data
+$ cd data				this would take you into the directory called data
+$ mkdir raw processed			this would make two directories one called raw and on ecalled processed
+$ mkdir 2016-05-20/data/raw		this would make a directory within a directory
+$ mkdir 2016-05-20/data/processed	this would make a directory within a directory within a directory
+$ mkdir 2016-05-20			this would make a directory called 2016-05-20
+$ cd 2016-05-20				this would enter directory 2016-05-20
+$ mkdir data				this would make a directory called data
+$ mkdir raw processed			this would make two directories one called raw and one called processed
+
+Sorting, Piping, Uniq, Cut
+
+1. -n tells the computer to sort the numbers
+2. wc -l * | sort -n | head -n 3
+3. ????? you could do: sort | uniq 
+4. 2012-11-05,raccoon
+   2012-11-06,rabbit
+   2012-11-06,deer
+5. cut -d , -f 2 animals.txt | sort | uniq
+6. cut -d, -f 2 animals.txt | sort | uniq -c
+
+Wildcards
+
+1. ??????????????
+2. rm \*.txt
+
+
