@@ -15,7 +15,7 @@ Shortcuts
 1. takes you home
 2. takes you back one directory
 3. $ cd ~ takes her home
-$ cd .			does nothing?
+$ cd .			does nothing? # keeps you in the current directory
 $ cd /			takes you to back to the directory that contains u/home/
 $ cd /home/amanda	takes you to the specified path
 $ cd ../..		takes you back one directory
